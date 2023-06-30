@@ -10,3 +10,9 @@
 ### Activate Automatically
 
 1. Go to the extensions options page and use the 'Run Script Automatically' Flag
+
+
+## Credits
+
+Robert Sternberg
+Evan Templin
