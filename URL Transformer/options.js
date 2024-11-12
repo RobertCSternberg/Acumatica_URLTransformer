@@ -11,7 +11,12 @@ document.addEventListener('DOMContentLoaded', () => {
   // Save settings when the Save button is clicked
   saveButton.addEventListener('click', () => {
     chrome.storage.sync.set({ runAutomatically: runAutomatically.checked }, () => {
-      saveButton.textContent = 'Saved';
+      
+    saveButton.textContent = 'Saved';
+    const feedback = document.getElementById('feedback');
+    feedback.style.display = 'block';
+    setTimeout(() => feedback.style.display = 'none', 2000);
+    
       saveButton.classList.add('disabled');
       saveButton.disabled = true;
     });

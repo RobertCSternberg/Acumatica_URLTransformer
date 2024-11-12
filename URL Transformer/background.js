@@ -11,7 +11,7 @@ chrome.browserAction.onClicked.addListener(executeScript);
 // Add a context menu item
 chrome.contextMenus.create({
   id: 'executeScript',
-  title: 'Open as Tab/Load as Full Page',
+  title: 'Transform URL and Open',
   contexts: ['page'],
 });
 
